@@ -1,4 +1,5 @@
 class MoviesController < ApplicationController
+  include Pundit
   before_action :set_movie, only: %i[ show edit update destroy ]
 
   # GET /movies or /movies.json
